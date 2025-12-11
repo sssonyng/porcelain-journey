@@ -3,36 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue-and-White Porcelain: A Global Journey</title>
+    <title>Blue-and-White Porcelain Journey</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#history">History</a></li>
+                <li><a href="#references">Sources</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <h1>Welcome to the Global Journey of Blue-and-White Porcelain</h1>
-            <p>This website explores the global journey of Chinese blue-and-white porcelain from Jingdezhen to the world. Click on the regions to discover more.</p>
-            <img src="images/world-map.png" alt="World Map" id = "map">
-        </section>
-    </main>
 
-    <!-- Footer -->
+
+    <main>
+
+        <section id="home">
+
+            <h1>Global Journey of Blue-and-White Porcelain</h1>
+
+        <section id="map-section">
+            <p>Hover over the red circles to see the porcelain!</p>
+            
+            <div id="map-container">
+                <img src="images/world-map.png" alt="World Map" id="main-map">
+
+                <div class="hotspot" data-target="china" style="top: 45%; left: 76%;"></div>
+                
+                <div class="hotspot" data-target="japan" style="top: 46%; left: 86%;"></div>
+                
+                <div class="hotspot" data-target="turkey" style="top: 45%; left: 56%;"></div>
+                
+                <div class="hotspot" data-target="netherlands" style="top: 36%; left: 49%;"></div>
+                
+                <div class="hotspot" data-target="england" style="top: 34%; left: 46%;"></div>
+                
+                <div class="hotspot" data-target="mexico" style="top: 53%; left: 17%;"></div>
+                
+                <div class="hotspot" data-target="india" style="top: 54.5%; left: 70.5%;"></div>
+
+
+                <div class="popup" id="china">
+                    <img src="images/china.png" alt="China Porcelain">
+                    <p>China</p>
+                </div>
+                <div class="popup" id="japan">
+                    <img src="images/japan.png" alt="Japan Porcelain">
+                    <p>Japan</p>
+                </div>
+                <div class="popup" id="turkey">
+                    <img src="images/turkey.png" alt="Turkey Porcelain">
+                    <p>Turkey</p>
+                </div>
+                <div class="popup" id="netherlands">
+                    <img src="images/netherland.png" alt="Netherlands Porcelain">
+                    <p>Netherlands</p>
+                </div>
+                <div class="popup" id="england">
+                    <img src="images/england.png" alt="England Porcelain">
+                    <p>England</p>
+                </div>
+                <div class="popup" id="mexico">
+                    <img src="images/mexico.png" alt="Mexico Porcelain">
+                    <p>Mexico</p>
+                </div>
+                <div class="popup" id="india">
+                    <img src="images/india.png" alt="India Porcelain">
+                    <p>India</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery">
+
+            <h2>Gallery</h2>
+            <p>Click the regions on the map to explore porcelain pieces from different parts of the world.</p>
+            <div id="country-buttons">
+                <button class="country-button" data-country="china">China</button>
+                <button class="country-button" data-country="japan">Japan</button>
+                <button class="country-button" data-country="turkey">Turkey</button>
+                <button class="country-button" data-country="netherlands">Netherlands</button>
+                <button class="country-button" data-country="england">England</button>
+                <button class="country-button" data-country="mexico">Mexico</button>
+                <button class="country-button" data-country="india">India</button>
+            </div>
+            <div id="country-details">
+                <div id="country-image">
+                    <img src="images/china.png" alt="China Porcelain" id="country-img">
+                </div>
+                <div id="country-description">
+                    <h3 id="country-name">China</h3>
+                    <p id="country-info">This porcelain piece is a blue-and-white porcelain from the Ming Dynasty in China. Blue-and-white porcelain is a distinctive style characterized by blue patterns painted on white ceramic. It is one of the most iconic and celebrated styles in Chinese ceramics. This piece features floral patterns and cloud motifs, reflecting a harmony with nature. During the Ming Dynasty, blue-and-white porcelain was used by the imperial court and later exported to Europe and the Middle East, greatly influencing the history of global ceramics. This piece is an excellent example of Chinese blue-and-white porcelain, showcasing the technological advancements and cultural significance of the Ming era. It represents the beauty and refinement of Chinese porcelain craftsmanship.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="history">
+            <h2>Historical Timeline</h2>
+            <p>The evolution and global spread of Blue-and-White Porcelain.</p>
+            
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="content">
+                        <h3>14th Century (Yuan Dynasty)</h3>
+                        <p>Blue-and-white porcelain matures in Jingdezhen, China. Cobalt blue pigment is imported from Persia, creating the iconic vibrant blue color.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="content">
+                        <h3>15th-16th Century (Ming Dynasty)</h3>
+                        <p>The golden age of Chinese porcelain. It becomes a major export good via the Silk Road and maritime trade routes to the Middle East and Southeast Asia.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="content">
+                        <h3>Early 17th Century</h3>
+                        <p>The Dutch East India Company (VOC) begins importing massive amounts of Chinese porcelain to Europe. Japan starts producing Arita ware to fill the gap during China's transition period.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="content">
+                        <h3>Mid 17th Century</h3>
+                        <p>Europeans, unable to replicate the hard-paste porcelain recipe, create "Delftware" in the Netherlands—a tin-glazed earthenware imitating the Chinese style.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="content">
+                        <h3>18th Century</h3>
+                        <p>European factories (like Meissen in Germany and Wedgwood in England) finally discover the secret of porcelain making. The style evolves into global variations like Mexican Talavera.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="references">
+            <h2>Sources & References</h2>
+            <ul>
+                <li>
+                    <strong>Academic Article:</strong> Finlay, Robert. "The Pilgrim Art: The Culture of Porcelain in World History." 
+                    <em>Journal of World History</em>, vol. 9, no. 2, 1998, pp. 141–187. 
+                    <br>(Source: JSTOR)
+                </li>
+                
+                <li>
+                    <strong>Academic Article:</strong> Carswell, John. "The Interaction of China and the Islamic World: Blue-and-White." 
+                    <em>Proceedings of the Seminar for Arabian Studies</em>, vol. 32, 2002, pp. 15-25.
+                    <br>(Source: JSTOR)
+                </li>
+
+                <li>
+                    <strong>Academic Article:</strong> Medley, Margaret. "Organization and Production at Jingdezhen in the Sixteenth Century." 
+                    <em>Ars Orientalis</em>, vol. 23, 1993, pp. 115-120.
+                    <br>(Source: JSTOR)
+                </li>
+
+                <li style="margin-top: 15px; list-style: none; border-top: 1px solid #ddd; padding-top: 10px;">
+                    <em>*Project Note: My major is computer science. This digital project explores the historical diffusion of 'Blue and White porcelain' art through modern web technologies (HTML/CSS/JS), demonstrating how digital tools can archive and visualize cultural heritage.</em>
+                </li>
+            </ul>
+        </section>
+
+    </main>
     <footer>
-        <p>&copy; 2025 Blue-and-White Porcelain Project</p>
+
+        <p>&copy; 2025 Blue and White Porcelain Project SoyeonPark</p>
+
     </footer>
+
 
     <script src="script.js"></script>
 </body>
